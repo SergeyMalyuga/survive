@@ -1,19 +1,27 @@
 <section class="hero" aria-labelledby="title-main">
   <h2 id="title-main" class="hero__title-main visually-hidden">Купить игру сейчас</h2>
   <div class="hero__swiper">
-    <app-swiper>
+    <app-swiper aria-label="Галерея изображений игры">
       <div class="swiper-slide">
-        <img src="./assets/images/raster/hero-bg-1.webp">
+        <img src="./assets/images/raster/hero-bg-1.webp" alt="Отряд игроков на фоне ацтекской пирамиды">
       </div>
       <div class="swiper-slide">
-        <img src="./assets/images/raster/hero-bg-2.webp">
+        <img src="./assets/images/raster/hero-bg-2.webp" alt="Пещера в джунглях">
       </div>
       <div class="swiper-slide">
-        <img src="./assets/images/raster/hero-bg-3.webp">
+        <img src="./assets/images/raster/hero-bg-3.webp" alt="Джейкоб">
       </div>
       <div class="swiper-slide">
-        <img src="./assets/images/raster/hero-bg-4.webp">
+        <img src="./assets/images/raster/hero-bg-4.webp" alt="Гробница внутри пирамиды">
       </div>
     </app-swiper>
+  </div>
+  <div class="hero__content">
+    <div class="hero__wrapper">
+      <h3 class="hero__title-content">SURVIVE AT ALL COSTS</h3>
+      <span class="hero__text">Experience new social battle royale game</span>
+      <button class="hero__button">Buy Now on Steam | $14.99</button>
+    </div>
+    <a href="#" class="hero__link" aria-label="Прочитать историю игры">the story</a>
   </div>
 </section>
