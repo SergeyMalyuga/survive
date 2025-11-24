@@ -1,7 +1,11 @@
 @use '../../../styles/variables';
 
 .header-main {
-  background-color: #2e4444;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+  width: 100%;
 
   &__link-logo {
     display: block;

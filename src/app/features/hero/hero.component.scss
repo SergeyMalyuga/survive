@@ -1,0 +1,14 @@
+@use '../../../styles/variables' as variables;
+
+.hero {
+  padding-top: 50px;
+  padding-bottom: 70px;
+
+  &__swiper {
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
