@@ -1,0 +1,40 @@
+@use '../../../styles/variables' as variables;
+
+.story {
+  height: 100vh;
+  padding: 20px 0;
+  background-image: url("../../../assets/images/raster/hero-bg-2.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  scroll-snap-align: start;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &_content {
+    display: flex;
+  }
+
+  &__title {
+    &-content {
+      text-align: left;
+      border-bottom: 3px solid variables.$text-main-color;
+    }
+  }
+
+  &__subtitle {
+    color: variables.$text-main-color;
+    font-family: variables.$font-family-secondary;
+    font-size: clamp(1.125rem, 1.037rem + 0.3859vw, 1.5rem);
+    font-weight: 700;
+    line-height: clamp(1.375rem, 1.2723rem + 0.4502vw, 1.8125rem);;
+    letter-spacing: 2px;
+    text-align: left;
+  }
+
+  &__wrapper {
+    max-width: 600px;
+    width: 100%;
+  }
+}

@@ -4,8 +4,9 @@
   padding-top: 80px;
   padding-bottom: 50px;
   height: 100vh;
+  scroll-snap-align: start;
 
-  &__title {
+/*  &__title {
     &-content {
       margin: 0;
       color: variables.$text-main-color;
@@ -17,7 +18,7 @@
       text-align: center;
       text-transform: uppercase;
     }
-  }
+  }*/
 
   &__text {
     color: variables.$text-main-color;
