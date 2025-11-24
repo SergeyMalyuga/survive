@@ -1,7 +1,7 @@
 @use '../../../styles/variables';
 
 .header-main {
-  background-color: aqua;
+  background-color: #2e4444;
 
   &__link-logo {
     display: block;
@@ -9,6 +9,7 @@
 
     img {
       width: 100%;
+      display: block;
       height: auto;
     }
   }
@@ -22,9 +23,152 @@
   }
 
   &__list {
-    list-style: none;
+    &-nav {
+      list-style: none;
+      display: flex;
+      gap: 32px;
+      padding: 0;
+      margin: 0;
+      text-transform: uppercase;
+    }
+
+    &-actions {
+      position: absolute;
+      visibility: hidden;
+      opacity: 0;
+      width: 100%;
+      top: 100%;
+      left: 0;
+      list-style: none;
+      padding: 5px;
+      margin: 0;
+      border-radius: 3px;
+      background: variables.$black;
+      color: variables.$text-main-color;
+      font-size: 30px;
+      font-weight: 700;
+      line-height: 100%;
+      letter-spacing: 0.1em;
+      text-align: left;
+      text-transform: uppercase;
+      transition: visibility 0.3s ease, opacity 0.3s ease;
+
+      &-open {
+        visibility: visible;
+        opacity: 1;
+      }
+    }
+
+    &-platform {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      gap: 17px;
+    }
+  }
+
+
+  &__link {
+    &-nav {
+      text-decoration: none;
+      color: variables.$text-main-color;
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: variables.$orange
+      }
+    }
+  }
+
+  &__item {
+    &-actions {
+      cursor: pointer;
+      transition: color 0.3s ease;
+
+      &:not(:last-child) {
+        margin-bottom: 5px;
+      }
+
+      &:hover {
+        color: variables.$orange;
+      }
+    }
+
+    &-platform {
+      color: variables.$orange;
+      cursor: pointer;
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: variables.$text-main-color;
+      }
+    }
+  }
+
+  &__actions {
     display: flex;
-    padding: 0;
-    margin: 0;
+  }
+
+  &__button-language {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background-color: transparent;
+    border: none;
+    color: variables.$text-main-color;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 100%;
+    letter-spacing: 0.1em;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: color 0.3s ease;
+
+    &::after {
+      content: '';
+      display: block;
+      width: 20px;
+      height: 15px;
+      background-image: url("../../../assets/images/vector/header-arrow.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      transition: transform 0.3s ease;
+    }
+
+    &:hover {
+      color: variables.$orange;
+
+      &::after {
+        background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 8.70068 4.83444' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='8.700684' height='4.834442' fill='none' customFrame='%23000000'%3E%3Cpath id='Vector 2' d='M0.702881 0.70282L4.35073 3.9032L7.99793 0.70282' stroke='rgb(255 181 72 / 100%)' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.39999998'/%3E%3C/svg%3E");
+        transform: rotate(180deg);
+      }
+    }
+  }
+
+  &__wrapper {
+    position: relative;
+  }
+
+  &__action {
+    &-language {
+      padding: 0 23px 0 0;
+      margin-right: 24px;
+      border-right: 1px solid variables.$text-main-color-light;
+      display: flex;
+      align-items: center;
+      position: relative;
+
+      &:hover {
+        .header-main__button-language {
+          &::after {
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 8.70068 4.83444' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='8.700684' height='4.834442' fill='none' customFrame='%23000000'%3E%3Cpath id='Vector 2' d='M0.702881 0.70282L4.35073 3.9032L7.99793 0.70282' stroke='rgb(255 181 72 / 100%)' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.39999998'/%3E%3C/svg%3E");
+            transform: rotate(180deg);
+          }
+        }
+      }
+    }
   }
 }

@@ -3,14 +3,39 @@
     <a class="header-main__link-logo" href="#" role="link">
       <img src="./assets/images/vector/header-logo.svg" width="55" height="55" alt="Логотип Survive at all costs">
     </a>
-    <nav class="header-main__nav" role="navigation">
-      <ul class="header-main__list">
-        <li class="header-main__item">Main</li>
-        <li class="header-main__item">About</li>
-        <li class="header-main__item">Game features</li>
-        <li class="header-main__item">System requirements</li>
-        <li class="header-main__item">Quotes</li>
+    <nav class="header-main__nav" role="navigation" aria-label="Main navigation">
+      <ul class="header-main__list-nav" role="list">
+        <li class="header-main__item-nav"><a href="#" class="header-main__link-nav">Main</a></li>
+        <li class="header-main__item-nav"><a href="#" class="header-main__link-nav">About</a></li>
+        <li class="header-main__item-nav"><a href="#" class="header-main__link-nav">Game features</a></li>
+        <li class="header-main__item-nav"><a href="#" class="header-main__link-nav">System requirements</a></li>
+        <li class="header-main__item-nav"><a href="#" class="header-main__link-nav">Quotes</a></li>
       </ul>
     </nav>
+    <div class="header-main__actions">
+      <div appToggleLanguage (languageToggled)="onLanguageToggled($event)" class="header-main__action-language">
+        <div class="header-main__wrapper">
+          <button class="header-main__button-language" aria-label="Select language">eng</button>
+          <ul class="header-main__list-actions" [class.header-main__list-actions-open]="isLanguageMenuOpen()"
+              role="listbox" aria-label="Language options">
+            <li class="header-main__item-actions" role="option">rus</li>
+            <li class="header-main__item-actions" role="option">fra</li>
+            <li class="header-main__item-actions" role="option">deu</li>
+          </ul>
+        </div>
+      </div>
+        <ul class="header-main__list-platform" role="list">
+          <li class="header-main__item-platform">
+            <svg width="30" height="30" aria-label="Xbox platform" role="img">
+              <use href="./assets/images/vector/header-xbox.svg#xbox-icon"/>
+            </svg>
+          </li>
+          <li class="header-main__item-platform">
+            <svg width="30" height="30" aria-label="Steam platform" role="img">
+              <use href="./assets/images/vector/header-steam.svg#steam-icon"/>
+            </svg>
+          </li>
+        </ul>
+    </div>
   </div>
 </header>
