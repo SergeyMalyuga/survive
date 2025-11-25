@@ -6,20 +6,6 @@
   height: 100vh;
   scroll-snap-align: start;
 
-/*  &__title {
-    &-content {
-      margin: 0;
-      color: variables.$text-main-color;
-      font-family: variables.$font-family-secondary;
-      font-size: clamp(2.0625rem, 1.373rem + 3.0225vw, 5rem);
-      font-weight: 400;
-      line-height: clamp(2.5rem, 1.6785rem + 3.6013vw, 6rem);
-      letter-spacing: 3px;
-      text-align: center;
-      text-transform: uppercase;
-    }
-  }*/
-
   &__text {
     color: variables.$text-main-color;
     font-family: variables.$font-family-secondary;
@@ -95,23 +81,26 @@
     letter-spacing: 0;
     text-align: justify;
     text-transform: uppercase;
+    transition: all 0.3s ease;
 
     &::after {
       content: "";
       display: block;
       width: 22px;
       height: 10px;
-      background-image: url("../../../assets/images/vector/hero-scroll-down.svg");
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: cover;
+      background-color: variables.$text-main-color;
+      mask-image: url("../../../assets/images/vector/hero-scroll-down.svg");
+      mask-repeat: no-repeat;
+      mask-position: center;
+      mask-size: cover;
+      transition: background-color 0.3s ease;
     }
 
     &:hover {
       color: variables.$orange;
 
       &::after {
-        background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 22.3132 10.2007' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='22.313232' height='10.200684' fill='none' customFrame='%23000000'%3E%3Cpath id='scroll down' d='M21.3132 1L11.0726 9.16912L1.05884 1L21.3132 1Z' stroke='rgb(255 181 72 / 100%)' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' /%3E%3C/svg%3E%0A");
+        background-color: variables.$orange;
       }
     }
   }

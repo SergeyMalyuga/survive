@@ -1,5 +1,5 @@
 <app-header/>
 <main class="main" role="main">
-  <app-hero/>
-  <app-story/>
+  <app-hero (scrolled)="onScrollRequested()"/>
+  <app-story [isScroll]="isStoryScroll()"/>
 </main>

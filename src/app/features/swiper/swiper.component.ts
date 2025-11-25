@@ -21,7 +21,6 @@ export class SwiperComponent implements AfterViewInit, OnDestroy {
   }
 
   ngAfterViewInit(): void {
-    console.log(this.swiperConfigService.getConfig(this.swiperType))
     this.initConfig();
   }
 
