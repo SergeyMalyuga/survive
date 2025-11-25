@@ -1,17 +1,28 @@
-import {AfterViewInit, Component, ElementRef, OnDestroy} from '@angular/core';
+import {AfterViewInit, Component, ElementRef, inject, Input, OnDestroy} from '@angular/core';
 import Swiper from 'swiper';
-import {Autoplay} from 'swiper/modules';
+import {Autoplay, Navigation, Pagination} from 'swiper/modules';
+import {SwiperConfig} from '../../core/models/swiper-config.model';
+import {SwiperConfigService} from '../../core/services/swiper-config.service';
+import {SwiperType} from '../../core/constants/const';
 
 
 @Component({
   selector: 'app-swiper',
   templateUrl: 'swiper.component.html',
-  styleUrl: 'swiper.component.scss' //обязательно указать width для класса swiper
+  styleUrl: 'swiper.component.scss',
 })
 export class SwiperComponent implements AfterViewInit, OnDestroy {
+  @Input({required: true}) swiperType!: SwiperType;
+
   private swiper!: Swiper;
+  private swiperConfigService = inject(SwiperConfigService);
 
   constructor(private el: ElementRef) {
+  }
+
+  ngAfterViewInit(): void {
+    console.log(this.swiperConfigService.getConfig(this.swiperType))
+    this.initConfig();
   }
 
   ngOnDestroy(): void {
@@ -20,19 +31,27 @@ export class SwiperComponent implements AfterViewInit, OnDestroy {
     }
   }
 
-  ngAfterViewInit() {
-
+  initConfig() {
+    const config = this.swiperConfigService.getConfig(this.swiperType);
     const swiperElement = this.el.nativeElement.querySelector('.swiper');
-
     this.swiper = new Swiper(swiperElement, {
-      modules: [Autoplay],
-      slidesPerView: "auto",
-      spaceBetween: 0,
-      loop: true,
-      autoplay: {
-        delay: 3000
-      },
+      modules: this.getModules(config),
+      ...config.options,
     });
+  }
+
+  private getModules(config: SwiperConfig) {
+    const modules = [];
+    if (config.autoplay) {
+      modules.push(Autoplay);
+    }
+    if (config.pagination) {
+      modules.push(Pagination);
+    }
+    if (config.navigation) {
+      modules.push(Navigation);
+    }
+    return modules;
   }
 }
 

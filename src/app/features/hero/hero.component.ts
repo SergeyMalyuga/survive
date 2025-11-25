@@ -1,5 +1,6 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
+import {ChangeDetectionStrategy, Component} from '@angular/core';
 import {SwiperComponent} from '../swiper/swiper.component';
+import {SwiperType} from '../../core/constants/const';
 
 @Component({
   selector: 'app-hero',
@@ -11,5 +12,5 @@ import {SwiperComponent} from '../swiper/swiper.component';
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class HeroComponent {
-
+  protected readonly SwiperType = SwiperType;
 }
