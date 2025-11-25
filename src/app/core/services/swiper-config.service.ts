@@ -19,14 +19,32 @@ export class SwiperConfigService {
         autoplay: {
           delay: 3000
         },
+        speed: 1000
       } as SwiperOptions
     },
     [SwiperType.STORY]: {
-      autoplay: true,
+      effects: true,
+      navigation: true,
+      pagination: true,
       options: {
-        slidesPerView: "auto",
+        slidesPerView: 1,
         effect: 'cards',
+        cardsEffect: {
+          perSlideOffset: 8,
+          perSlideRotate: 2,
+          rotate: true,
+          slideShadows: true,
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
         spaceBetween: 0,
+        speed: 600,
       } as SwiperOptions
     }
   }

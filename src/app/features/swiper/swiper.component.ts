@@ -1,6 +1,6 @@
 import {AfterViewInit, Component, ElementRef, inject, Input, OnDestroy} from '@angular/core';
 import Swiper from 'swiper';
-import {Autoplay, Navigation, Pagination} from 'swiper/modules';
+import {Autoplay, Navigation, Pagination, EffectCards} from 'swiper/modules';
 import {SwiperConfig} from '../../core/models/swiper-config.model';
 import {SwiperConfigService} from '../../core/services/swiper-config.service';
 import {SwiperType} from '../../core/constants/const';
@@ -49,6 +49,9 @@ export class SwiperComponent implements AfterViewInit, OnDestroy {
     }
     if (config.navigation) {
       modules.push(Navigation);
+    }
+    if (config.effects) {
+      modules.push(EffectCards);
     }
     return modules;
   }
