@@ -1,0 +1,20 @@
+@use '../../../styles/variables';
+
+.details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 50px 0;
+  background-image: url("../../../assets/images/raster/hero-bg-3.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  scroll-snap-align: start;
+
+  &__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
