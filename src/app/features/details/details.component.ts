@@ -1,6 +1,6 @@
-import { ChangeDetectionStrategy, Component, signal } from '@angular/core';
-import { TabRequestToggleDirective } from './directives/tab-request-toggle.directive';
-import { DetailsTabIds } from '../../core/constants/const';
+import {ChangeDetectionStrategy, Component, signal} from '@angular/core';
+import {TabRequestToggleDirective} from './directives/tab-request-toggle.directive';
+import {DetailsTabIds} from '../../core/constants/const';
 
 @Component({
   selector: 'app-details',

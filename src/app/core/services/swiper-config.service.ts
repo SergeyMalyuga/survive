@@ -1,7 +1,7 @@
-import { Injectable } from '@angular/core';
-import { SwiperConfig } from '../models/swiper-config.model';
-import { SwiperType } from '../constants/const';
-import { SwiperOptions } from 'swiper/types';
+import {Injectable} from '@angular/core';
+import {SwiperConfig} from '../models/swiper-config.model';
+import {SwiperType} from '../constants/const';
+import {SwiperOptions} from 'swiper/types';
 
 @Injectable({
   providedIn: 'root',

@@ -1,14 +1,7 @@
-import {
-  ChangeDetectionStrategy,
-  Component,
-  EventEmitter,
-  Input,
-  Output,
-  signal,
-} from '@angular/core';
-import { ScrollToStoryDirective } from './directives/scroll-to-story.directive';
-import { SwiperComponent } from '../swiper/swiper.component';
-import { SwiperType } from '../../core/constants/const';
+import {ChangeDetectionStrategy, Component, Input,} from '@angular/core';
+import {ScrollToStoryDirective} from './directives/scroll-to-story.directive';
+import {SwiperComponent} from '../swiper/swiper.component';
+import {SwiperType} from '../../core/constants/const';
 
 @Component({
   selector: 'app-story',

@@ -1,5 +1,5 @@
-import { ChangeDetectionStrategy, Component, signal } from '@angular/core';
-import { ToggleLanguageDirective } from './directives/toggle-language.directive';
+import {ChangeDetectionStrategy, Component, signal} from '@angular/core';
+import {ToggleLanguageDirective} from './directives/toggle-language.directive';
 
 @Component({
   selector: 'app-header',

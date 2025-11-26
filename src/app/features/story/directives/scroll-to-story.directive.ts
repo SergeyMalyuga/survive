@@ -1,11 +1,4 @@
-import {
-  Directive,
-  ElementRef,
-  inject,
-  Input,
-  OnChanges,
-  SimpleChanges,
-} from '@angular/core';
+import {Directive, ElementRef, inject, Input, OnChanges, SimpleChanges,} from '@angular/core';
 
 @Directive({
   selector: '[appScrollToStory]',
