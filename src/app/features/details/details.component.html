@@ -1,13 +1,80 @@
 <section class="details" aria-labelledby="title-details">
-  <h2 id="title-details" class="details__title-main visually-hidden">Детали игры</h2>
+  <h2 id="title-details" class="details__title-main visually-hidden">
+    Детали игры
+  </h2>
   <div class="details__content container">
     <div class="details__wrapper-content">
       <div class="details__subtitle subtitle">What’s so special?</div>
       <h3 class="details__title-content title-content">features</h3>
       <ul class="details__list" role="tablist">
-        <li class="details__item" role="presentation"></li>
-        <li class="details__item" role="presentation"></li>
-        <li class="details__item" role="presentation"></li>
+        <li class="details__item" role="presentation">
+          <button
+            appTabRequestToggle
+            (tabToggleRequested)="onTabToggleRequested($event)"
+            class="details__button"
+            [class.details__button--active]="activeTab() === DetailsTabIds.SURVIVE"
+            type="button"
+            aria-controls="details-tab-1"
+          >
+            SURVIVE AT ALL COSTS
+          </button>
+          <div
+            id="details-tab-1"
+            class="details__tab"
+            [class.details__tab--active]="activeTab() === DetailsTabIds.SURVIVE"
+          >
+            <p>
+              You have 30 minutes to find a relic, signal for extraction, and
+              grabone of three spots on the rescue chopper.
+            </p>
+          </div>
+        </li>
+        <li class="details__item" role="presentation">
+          <button
+            appTabRequestToggle
+            (tabToggleRequested)="onTabToggleRequested($event)"
+            class="details__button"
+            [class.details__button--active]="activeTab() === DetailsTabIds.ALLIES"
+            type="button"
+            aria-controls="details-tab-2"
+          >
+            CREATE ALLIES AND ENEMIES
+          </button>
+          <div
+            id="details-tab-2"
+            class="details__tab"
+            [class.details__tab--active]="activeTab() === DetailsTabIds.ALLIES"
+          >
+            <p>
+              You have 30 minutes to find a relic, signal for extraction, and
+              grabone of three spots on the rescue chopper.
+            </p>
+          </div>
+        </li>
+        <li class="details__item" role="presentation">
+          <button
+            appTabRequestToggle
+            (tabToggleRequested)="onTabToggleRequested($event)"
+            class="details__button"
+            [class.details__button--active]="activeTab() === DetailsTabIds.AUDIENCE"
+            type="button"
+            aria-controls="details-tab-3"
+          >
+            IMPRESS THE AUDIENCE
+          </button>
+          <div
+            id="details-tab-3"
+            class="details__tab"
+            [class.details__tab--active]="
+              activeTab() === DetailsTabIds.AUDIENCE
+            "
+          >
+            <p>
+              You have 30 minutes to find a relic, signal for extraction, and
+              grabone of three spots on the rescue chopper.
+            </p>
+          </div>
+        </li>
       </ul>
     </div>
   </div>

@@ -1,18 +1,43 @@
 <section class="hero" aria-labelledby="title-main">
-  <h2 id="title-main" class="hero__title-main visually-hidden">Купить игру сейчас</h2>
+  <h2 id="title-main" class="hero__title-main visually-hidden">
+    Купить игру сейчас
+  </h2>
   <div class="hero__swiper">
-    <app-swiper [swiperType]="SwiperType.HERO" aria-label="Галерея изображений игры">
+    <app-swiper
+      [swiperType]="SwiperType.HERO"
+      aria-label="Галерея изображений игры"
+    >
       <div class="swiper-slide">
-        <img src="./assets/images/raster/hero-bg-1.webp" alt="Отряд игроков на фоне ацтекской пирамиды" width="2880" height="1922">
+        <img
+          src="./assets/images/raster/hero-bg-1.webp"
+          alt="Отряд игроков на фоне ацтекской пирамиды"
+          width="2880"
+          height="1922"
+        />
       </div>
       <div class="swiper-slide">
-        <img src="./assets/images/raster/hero-bg-2.webp" alt="Пещера в джунглях" width="2880" height="1922">
+        <img
+          src="./assets/images/raster/hero-bg-2.webp"
+          alt="Пещера в джунглях"
+          width="2880"
+          height="1922"
+        />
       </div>
       <div class="swiper-slide">
-        <img src="./assets/images/raster/hero-bg-3.webp" alt="Джейкоб" width="2880" height="1922">
+        <img
+          src="./assets/images/raster/hero-bg-3.webp"
+          alt="Джейкоб"
+          width="2880"
+          height="1922"
+        />
       </div>
       <div class="swiper-slide">
-        <img src="./assets/images/raster/hero-bg-4.webp" alt="Гробница внутри пирамиды" width="2880" height="1922">
+        <img
+          src="./assets/images/raster/hero-bg-4.webp"
+          alt="Гробница внутри пирамиды"
+          width="2880"
+          height="1922"
+        />
       </div>
     </app-swiper>
   </div>
@@ -22,6 +47,13 @@
       <span class="hero__text">Experience new social battle royale game</span>
       <button class="hero__button">Buy Now on Steam | $14.99</button>
     </div>
-    <a appScrollRequest (scrollRequested)="onScrolled()" href="#" class="hero__link" aria-label="Прочитать историю игры">the story</a>
+    <a
+      appScrollRequest
+      (scrollRequested)="onScrolled()"
+      href="#"
+      class="hero__link"
+      aria-label="Прочитать историю игры"
+      >the story</a
+    >
   </div>
 </section>

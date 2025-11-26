@@ -1,9 +1,8 @@
-import {Directive, EventEmitter, HostListener, Output} from '@angular/core';
+import { Directive, EventEmitter, HostListener, Output } from '@angular/core';
 
 @Directive({
-  selector: '[appToggleLanguage]'
+  selector: '[appToggleLanguage]',
 })
-
 export class ToggleLanguageDirective {
   @Output() languageToggled = new EventEmitter<boolean>();
 
@@ -17,4 +16,3 @@ export class ToggleLanguageDirective {
     this.languageToggled.emit(false);
   }
 }
-

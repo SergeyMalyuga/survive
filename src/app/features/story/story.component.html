@@ -1,29 +1,69 @@
-<section appScrollToStory [isScroll]="isStoryScroll" class="story" aria-labelledby="title-story">
-  <h2 id="title-story" class="story__title-main visually-hidden">История королевской битвы</h2>
+<section
+  appScrollToStory
+  [isScroll]="isStoryScroll"
+  class="story"
+  aria-labelledby="title-story"
+>
+  <h2 id="title-story" class="story__title-main visually-hidden">
+    История королевской битвы
+  </h2>
   <div class="story__content container">
-    <div class="story__wrapper" role="region" aria-labelledby="title-story-content">
+    <div
+      class="story__wrapper"
+      role="region"
+      aria-labelledby="title-story-content"
+    >
       <div class="story__subtitle subtitle">What is SOS?</div>
-      <h3 id="title-story-content" class="story__title-content title-content">social battle royale game</h3>
-      <p>Each round, you and 15 other contestants compete to escape a deadly island filled with monsters. The trick is:
-        three people can survive. Will you run solo or form friendships with others to escape?
-        Making the right decisions could be the difference between life and death.</p>
+      <h3 id="title-story-content" class="story__title-content title-content">
+        social battle royale game
+      </h3>
+      <p>
+        Each round, you and 15 other contestants compete to escape a deadly
+        island filled with monsters. The trick is: three people can survive.
+        Will you run solo or form friendships with others to escape? Making the
+        right decisions could be the difference between life and death.
+      </p>
     </div>
     <div class="story__swiper">
-      <app-swiper [swiperType]="SwiperType.STORY" aria-label="Галерея изображений игры">
+      <app-swiper
+        [swiperType]="SwiperType.STORY"
+        aria-label="Галерея изображений игры"
+      >
         <div class="swiper-slide">
-          <img src="./assets/images/raster/hero-bg-1.webp" alt="Отряд игроков на фоне ацтекской пирамиды" width="480"
-               height="610" loading="lazy">
+          <img
+            src="./assets/images/raster/hero-bg-1.webp"
+            alt="Отряд игроков на фоне ацтекской пирамиды"
+            width="480"
+            height="610"
+            loading="lazy"
+          />
         </div>
         <div class="swiper-slide">
-          <img src="./assets/images/raster/hero-bg-2.webp" alt="Пещера в джунглях" width="480" height="610"
-               loading="lazy">
+          <img
+            src="./assets/images/raster/hero-bg-2.webp"
+            alt="Пещера в джунглях"
+            width="480"
+            height="610"
+            loading="lazy"
+          />
         </div>
         <div class="swiper-slide">
-          <img src="./assets/images/raster/hero-bg-3.webp" alt="Джейкоб" width="480" height="610" loading="lazy">
+          <img
+            src="./assets/images/raster/hero-bg-3.webp"
+            alt="Джейкоб"
+            width="480"
+            height="610"
+            loading="lazy"
+          />
         </div>
         <div class="swiper-slide">
-          <img src="./assets/images/raster/hero-bg-4.webp" alt="Гробница внутри пирамиды" width="480" height="610"
-               loading="lazy">
+          <img
+            src="./assets/images/raster/hero-bg-4.webp"
+            alt="Гробница внутри пирамиды"
+            width="480"
+            height="610"
+            loading="lazy"
+          />
         </div>
       </app-swiper>
     </div>

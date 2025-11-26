@@ -1,21 +1,29 @@
-import {Directive, ElementRef, inject, Input, OnChanges, SimpleChanges} from '@angular/core';
+import {
+  Directive,
+  ElementRef,
+  inject,
+  Input,
+  OnChanges,
+  SimpleChanges,
+} from '@angular/core';
 
 @Directive({
-  selector: '[appScrollToStory]'
+  selector: '[appScrollToStory]',
 })
 export class ScrollToStoryDirective implements OnChanges {
-  @Input({required: true}) isScroll!: boolean;
+  @Input({ required: true }) isScroll!: boolean;
   private isScrolling = false;
   private elementRef = inject(ElementRef);
 
   ngOnChanges(changes: SimpleChanges): void {
     if (changes['isScroll'] && this.isScroll && !this.isScrolling) {
       this.isScrolling = true;
+      setTimeout(() => {
+        this.scrollToSection();
         setTimeout(() => {
-          this.scrollToSection();
-          setTimeout(() => {
-            this.isScrolling = false
-          }, 1000);}, 100)
+          this.isScrolling = false;
+        }, 1000);
+      }, 100);
     }
   }
 
@@ -23,7 +31,7 @@ export class ScrollToStoryDirective implements OnChanges {
     const target = this.elementRef.nativeElement as HTMLElement;
     target.scrollIntoView({
       behavior: 'smooth',
-      block: 'start'
-    })
+      block: 'start',
+    });
   }
 }

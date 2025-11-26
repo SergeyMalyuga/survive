@@ -1,4 +1,4 @@
-@use '../../../styles/variables' as variables;
+@use "../../../styles/variables" as variables;
 
 .story {
   height: 100vh;
@@ -35,8 +35,8 @@
     height: 610px;
 
     @media (width <= 1440px) {
-        width: calc(225px + 275 * ((100vw - 320px) / 1120));
-        height: calc(270px + 340 * ((100vw - 320px) / 1120));
+      width: calc(225px + 275 * ((100vw - 320px) / 1120));
+      height: calc(270px + 340 * ((100vw - 320px) / 1120));
     }
 
     img {
@@ -47,4 +47,3 @@
     }
   }
 }
-

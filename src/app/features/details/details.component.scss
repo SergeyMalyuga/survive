@@ -1,4 +1,4 @@
-@use '../../../styles/variables';
+@use "../../../styles/variables";
 
 .details {
   display: flex;
@@ -16,5 +16,68 @@
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+
+  &__wrapper {
+    &-content {
+      max-width: 600px;
+      width: 100%;
+    }
+  }
+
+  &__title {
+    &-content {
+      text-align: left;
+    }
+  }
+
+  &__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__button {
+    position: relative;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    color: variables.$orange;
+    font-family: variables.$font-family-secondary;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-align: center;
+    font-size: clamp(1.3125rem, 1.0924rem + 0.9646vw, 2.25rem);
+    line-height: clamp(1.5625rem, 1.2984rem + 1.1576vw, 2.6875rem);
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: -20px;
+      transform: translateY(-50%);
+      display: block;
+      width: 14px;
+      height: 14px;
+      border: 2px solid variables.$text-main-color;
+      border-radius: 50%;
+    }
+
+    &--active {
+      &::before {
+        background-color: variables.$text-main-color;
+      }
+    }
+  }
+
+  &__tab {
+    height: 0;
+    overflow: hidden;
+    transition: height 0.3s ease;
+
+    &--active {
+      height: 100%;
+    }
   }
 }

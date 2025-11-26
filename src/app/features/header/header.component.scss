@@ -1,4 +1,4 @@
-@use '../../../styles/variables';
+@use "../../../styles/variables";
 
 .header-main {
   position: absolute;
@@ -55,7 +55,9 @@
       letter-spacing: 0.1em;
       text-align: left;
       text-transform: uppercase;
-      transition: visibility 0.3s ease, opacity 0.3s ease;
+      transition:
+        visibility 0.3s ease,
+        opacity 0.3s ease;
 
       &-open {
         visibility: visible;
@@ -72,7 +74,6 @@
     }
   }
 
-
   &__link {
     &-nav {
       text-decoration: none;
@@ -80,7 +81,7 @@
       transition: color 0.3s ease;
 
       &:hover {
-        color: variables.$orange
+        color: variables.$orange;
       }
     }
   }
@@ -131,7 +132,7 @@
     transition: color 0.3s ease;
 
     &::after {
-      content: '';
+      content: "";
       display: block;
       width: 20px;
       height: 15px;
