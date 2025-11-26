@@ -45,6 +45,17 @@ body {
   text-transform: uppercase;
 }
 
+
+.swiper-pagination-bullet {
+  background-color: variables.$text-main-color;
+  width: 14px;
+  height: 14px;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: variables.$orange;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -55,3 +66,4 @@ body {
   clip-path: inset(50%);
   border: 0;
 }
+
