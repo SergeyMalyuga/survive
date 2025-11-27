@@ -5,9 +5,9 @@
   <div class="details__content container">
     <div class="details__wrapper-content">
       <div class="details__subtitle subtitle">What’s so special?</div>
-      <h3 class="details__title-content title-content">features</h3>
-      <ul class="details__list" role="tablist">
-        <li class="details__item" role="presentation">
+      <h3 id="features-title" class="details__title-content title-content">features</h3>
+      <ul class="details__list" role="tablist" aria-labelledby="features-title">
+        <li class="details__item" [class.details__item--active]="activeTab() === DetailsTabIds.SURVIVE" role="presentation">
           <button
             appTabRequestToggle
             (tabToggleRequested)="onTabToggleRequested($event)"
@@ -15,6 +15,8 @@
             [class.details__button--active]="activeTab() === DetailsTabIds.SURVIVE"
             type="button"
             aria-controls="details-tab-1"
+            [attr.aria-selected]="activeTab() === DetailsTabIds.SURVIVE ? true : null"
+            role="tab"
           >
             SURVIVE AT ALL COSTS
           </button>
@@ -22,6 +24,7 @@
             id="details-tab-1"
             class="details__tab"
             [class.details__tab--active]="activeTab() === DetailsTabIds.SURVIVE"
+            role="tabpanel"
           >
             <p>
               You have 30 minutes to find a relic, signal for extraction, and
@@ -29,7 +32,7 @@
             </p>
           </div>
         </li>
-        <li class="details__item" role="presentation">
+        <li class="details__item" [class.details__item--active]="activeTab() === DetailsTabIds.ALLIES" role="presentation" role="presentation">
           <button
             appTabRequestToggle
             (tabToggleRequested)="onTabToggleRequested($event)"
@@ -37,6 +40,8 @@
             [class.details__button--active]="activeTab() === DetailsTabIds.ALLIES"
             type="button"
             aria-controls="details-tab-2"
+            [attr.aria-selected]="activeTab() === DetailsTabIds.ALLIES ? true : null"
+            role="tab"
           >
             CREATE ALLIES AND ENEMIES
           </button>
@@ -44,6 +49,7 @@
             id="details-tab-2"
             class="details__tab"
             [class.details__tab--active]="activeTab() === DetailsTabIds.ALLIES"
+            role="tabpanel"
           >
             <p>
               You have 30 minutes to find a relic, signal for extraction, and
@@ -51,7 +57,7 @@
             </p>
           </div>
         </li>
-        <li class="details__item" role="presentation">
+        <li class="details__item" [class.details__item--active]="activeTab() === DetailsTabIds.AUDIENCE" role="presentation" role="presentation">
           <button
             appTabRequestToggle
             (tabToggleRequested)="onTabToggleRequested($event)"
@@ -59,6 +65,8 @@
             [class.details__button--active]="activeTab() === DetailsTabIds.AUDIENCE"
             type="button"
             aria-controls="details-tab-3"
+            [attr.aria-selected]="activeTab() === DetailsTabIds.AUDIENCE ? true : null"
+            role="tab"
           >
             IMPRESS THE AUDIENCE
           </button>
@@ -68,6 +76,7 @@
             [class.details__tab--active]="
               activeTab() === DetailsTabIds.AUDIENCE
             "
+            role="tabpanel"
           >
             <p>
               You have 30 minutes to find a relic, signal for extraction, and

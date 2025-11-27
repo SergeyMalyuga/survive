@@ -16,6 +16,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-left: 45px
   }
 
   &__wrapper {
@@ -35,6 +36,24 @@
     list-style: none;
     margin: 0;
     padding: 0;
+
+    li:not(:last-child) {
+      margin-bottom: 15px;
+    }
+  }
+
+  &__item--active {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 17px;
+      left: -14px;
+      width: 2px;
+      height: 90%;
+      background-color: variables.$text-main-color;
+    }
   }
 
   &__button {
@@ -72,12 +91,21 @@
   }
 
   &__tab {
+    position: relative;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.8s ease;
 
     &--active {
       max-height: 200px;
+      overflow: visible;
+    }
+
+    p {
+      color: variables.$text-main-color;
+      font-size: clamp(0.875rem, 0.8163rem + 0.2572vw, 1.125rem);
+      font-weight: 400;
+      line-height: clamp(1rem, 0.912rem + 0.3859vw, 1.375rem);;
     }
   }
 }
