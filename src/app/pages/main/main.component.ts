@@ -3,10 +3,17 @@ import {HeaderComponent} from '../../features/header/header.component';
 import {HeroComponent} from '../../features/hero/hero.component';
 import {StoryComponent} from '../../features/story/story.component';
 import {DetailsComponent} from '../../features/details/details.component';
+import {RequirementsComponent} from '../../features/requirements/requirements.component';
 
 @Component({
   selector: 'app-main',
-  imports: [HeaderComponent, HeroComponent, StoryComponent, DetailsComponent],
+  imports: [
+    HeaderComponent,
+    HeroComponent,
+    StoryComponent,
+    DetailsComponent,
+    RequirementsComponent,
+  ],
   templateUrl: './main.component.html',
   styleUrl: './main.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,

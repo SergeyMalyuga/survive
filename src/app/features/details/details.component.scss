@@ -16,7 +16,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-left: 45px
+    padding-left: 45px;
   }
 
   &__wrapper {
@@ -105,7 +105,7 @@
       color: variables.$text-main-color;
       font-size: clamp(0.875rem, 0.8163rem + 0.2572vw, 1.125rem);
       font-weight: 400;
-      line-height: clamp(1rem, 0.912rem + 0.3859vw, 1.375rem);;
+      line-height: clamp(1rem, 0.912rem + 0.3859vw, 1.375rem);
     }
   }
 }
