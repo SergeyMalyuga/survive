@@ -1,0 +1,107 @@
+@use '../../../styles/variables';
+
+.quotes {
+  scroll-snap-align: start;
+  background: radial-gradient(78.66% 177.87% at 19.56% 37.57%, rgb(255 255 255 / 0%) 0%, rgb(0 0 0 / 0%) 19.22%, #080A0B 99.74%), url("../../../assets/images/raster/quotes-bg.jpg");
+  background-repeat: repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 50px 0;
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__column-left {
+    max-width: 410px;
+    width: 100%;
+  }
+
+  &__title {
+    &-content {
+      text-align: left;
+    }
+
+    &-card {
+      color: variables.$orange;
+      font-family: variables.$font-family-secondary;
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 29px;
+      letter-spacing: 2px;
+      text-align: left;
+      margin: 0;
+    }
+  }
+
+  &__text {
+    color: variables.$text-main-color;
+    font-size: clamp(0.875rem, 0.8163rem + 0.2572vw, 1.125rem);
+    font-weight: 400;
+    line-height: clamp(1rem, 0.912rem + 0.3859vw, 1.375rem);
+    letter-spacing: 0;
+    text-align: left;
+  }
+
+  &__wrapper {
+    &-image {
+      border-radius: 50%;
+      overflow: hidden;
+      width: 67px;
+      height: 66px;
+      box-shadow: 7px 4px 0 0 variables.$orange;
+    }
+
+    &-author {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    &-card-title {
+      span {
+        color: variables.$text-main-color;
+        font-size: clamp(0.875rem, 0.8163rem + 0.2572vw, 1.125rem);
+        font-weight: 400;
+        line-height: 22px;
+        letter-spacing: 0;
+        opacity: 0.5;
+        text-align: justify;
+      }
+    }
+
+    img {
+      display: block;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+
+  &__list {
+    list-style: none;
+    max-width: 598px;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  &__card {
+    max-width: 454px;
+    width: 100%;
+    border-radius: 10px;
+    background: rgb(255 255 255 / 8%);
+    padding: 15px;
+  }
+
+  &__link {
+    margin-left: auto;
+    color: variables.$text-main-color;
+    opacity: 0.5;
+
+    &:hover {
+      color: variables.$orange;
+      opacity: 1;
+    }
+  }
+}

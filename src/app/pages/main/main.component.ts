@@ -4,6 +4,7 @@ import {HeroComponent} from '../../features/hero/hero.component';
 import {StoryComponent} from '../../features/story/story.component';
 import {DetailsComponent} from '../../features/details/details.component';
 import {RequirementsComponent} from '../../features/requirements/requirements.component';
+import {QuotesComponent} from '../../features/quotes/quotes.component';
 
 @Component({
   selector: 'app-main',
@@ -13,6 +14,7 @@ import {RequirementsComponent} from '../../features/requirements/requirements.co
     StoryComponent,
     DetailsComponent,
     RequirementsComponent,
+    QuotesComponent,
   ],
   templateUrl: './main.component.html',
   styleUrl: './main.component.scss',
