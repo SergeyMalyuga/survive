@@ -1,0 +1,81 @@
+@use '../../../styles/variables';
+
+.footer {
+  scroll-snap-align: start;
+  background-color: variables.$black-night;
+  padding: 30px 0 20px;
+
+  &__content {
+    text-align: center;
+  }
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    border-bottom: 1px solid variables.$text-main-color-light;
+    margin-bottom: 20px;
+  }
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__list {
+    &-nav {
+      display: flex;
+      gap: 32px;
+    }
+
+    &-social {
+      display: flex;
+      gap: 32px;
+      justify-content: space-between;
+    }
+  }
+
+  &__link {
+    &-logo {
+      img {
+        display: block;
+      }
+    }
+
+    &-nav {
+      text-decoration: none;
+      color: variables.$text-main-color;
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 16px;
+      text-align: right;
+      text-transform: uppercase;
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: variables.$orange;
+      }
+    }
+
+    &-social {
+      color: variables.$text-main-color;
+      transition: color 0.3s ease;
+
+      &--youtube {
+        color: red;
+      }
+
+      &:hover {
+        color: variables.$orange;
+      }
+    }
+  }
+
+  &__copyright {
+    opacity: 0.5;
+    font-size: clamp(0.75rem, 0.7207rem + 0.1286vw, 0.875rem);
+    line-height: clamp(1rem, 0.956rem + 0.1929vw, 1.1875rem);
+  }
+}
