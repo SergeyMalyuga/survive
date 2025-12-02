@@ -5,6 +5,7 @@ import {StoryComponent} from '../../features/story/story.component';
 import {DetailsComponent} from '../../features/details/details.component';
 import {RequirementsComponent} from '../../features/requirements/requirements.component';
 import {QuotesComponent} from '../../features/quotes/quotes.component';
+import {SubscribeComponent} from '../../features/subscribe/subscribe.component';
 
 @Component({
   selector: 'app-main',
@@ -15,6 +16,7 @@ import {QuotesComponent} from '../../features/quotes/quotes.component';
     DetailsComponent,
     RequirementsComponent,
     QuotesComponent,
+    SubscribeComponent,
   ],
   templateUrl: './main.component.html',
   styleUrl: './main.component.scss',

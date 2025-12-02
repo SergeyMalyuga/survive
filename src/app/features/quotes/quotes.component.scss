@@ -27,9 +27,9 @@
     &-card {
       color: variables.$orange;
       font-family: variables.$font-family-secondary;
-      font-size: 24px;
+      font-size: clamp(1.3125rem, 1.2685rem + 0.1929vw, 1.5rem);
       font-weight: 700;
-      line-height: 29px;
+      line-height: clamp(1.5625rem, 1.5038rem + 0.2572vw, 1.8125rem);
       letter-spacing: 2px;
       text-align: left;
       margin: 0;
@@ -52,6 +52,19 @@
       width: 67px;
       height: 66px;
       box-shadow: 7px 4px 0 0 variables.$orange;
+
+      img {
+        display: block;
+        object-fit: cover;
+        object-position: center;
+        width: 100%;
+        height: auto;
+      }
+
+      @media (width <= 768px) {
+       width: clamp(2.5rem, 0.9716rem + 6.6998vw, 4.1875rem);
+        height: clamp(2.5rem, 1.0282rem + 6.4516vw, 4.125rem);
+      }
     }
 
     &-author {
@@ -70,12 +83,6 @@
         opacity: 0.5;
         text-align: justify;
       }
-    }
-
-    img {
-      display: block;
-      object-fit: cover;
-      object-position: center;
     }
   }
 
@@ -116,5 +123,24 @@
       color: variables.$orange;
       opacity: 1;
     }
+  }
+
+  &__blockquote {
+    color: variables.$text-main-color;
+    font-size: clamp(0.875rem, 0.8163rem + 0.2572vw, 1.125rem);
+    font-weight: 400;
+    line-height: clamp(1.1875rem, 1.0995rem + 0.3859vw, 1.5625rem);
+    letter-spacing: 0;
+    text-align: left;
+  }
+
+  &__date {
+    color: variables.$text-main-color;
+    opacity: 0.5;
+    font-size: clamp(0.75rem, 0.7207rem + 0.1286vw, 0.875rem);
+    font-weight: 400;
+    line-height: clamp(1rem, 0.956rem + 0.1929vw, 1.1875rem);
+    letter-spacing: 0;
+    text-align: left;
   }
 }

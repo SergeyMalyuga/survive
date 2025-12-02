@@ -1,0 +1,94 @@
+@use '../../../styles/variables' as variables;
+
+.subscribe {
+  background-color: variables.$black-night;
+  padding: 50px 0;
+
+  &__content {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas:
+      "img ."
+      "img content"
+      "img form"
+      "img .";
+  }
+
+  &__title {
+    &-content {
+      text-align: left;
+    }
+  }
+
+  &__wrapper {
+    &-image {
+      grid-area: img;
+
+      @media (width <= 568px) {
+        position: absolute;
+        left: -100px;
+        top: 0;
+      }
+
+      img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+
+  &__text {
+    color: variables.$text-main-color;
+    font-size: clamp(0.875rem, 0.8163rem + 0.2572vw, 1.125rem);
+    font-weight: 400;
+    line-height: clamp(1.1875rem, 1.1435rem + 0.1929vw, 1.375rem);
+    letter-spacing: 0;
+    text-align: left;
+    margin-bottom: 70px;
+  }
+
+  &__column {
+    grid-area: content;
+    max-width: 670px;
+  }
+
+  &__form {
+    grid-area: form;
+    display: flex;
+    gap: 17px;
+
+    input, input::placeholder {
+      background-color: transparent;
+      border: none;
+      color: variables.$orange;
+      font-size: clamp(0.875rem, 0.8163rem + 0.2572vw, 1.125rem);
+      font-weight: 400;
+      line-height: clamp(1.1875rem, 1.0995rem + 0.3859vw, 1.5625rem);
+      letter-spacing: 0;
+      text-align: left;
+    }
+
+    span {
+      color: variables.$text-main-color;
+      font-size: clamp(0.75rem, 0.7207rem + 0.1286vw, 0.875rem);
+      font-weight: 400;
+      line-height: clamp(1rem, 0.956rem + 0.1929vw, 1.1875rem);
+      letter-spacing: 0;
+      opacity: 0.5;
+      text-align: left;
+    }
+  }
+
+  &__label {
+    display: flex;
+    flex-direction: column;
+    max-width: 366px;
+    width: 100%;
+    padding: 15px;
+    background-color: rgb(255 255 255 / 10%);
+    border-radius: 5px;
+  }
+}
