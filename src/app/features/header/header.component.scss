@@ -26,6 +26,58 @@
     padding-bottom: 21px;
   }
 
+  &__burger {
+    position: relative;
+    display: none;
+    width: 35px;
+    height: 30px;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+
+    @media (width <= 1199px) {
+      display: block;
+    }
+  }
+
+  &__line {
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background-color: variables.$text-main-color;
+    border-radius: 3px;
+
+    &--top {
+      top: 0;
+      left: 0;
+    }
+
+    &--middle {
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+    }
+
+    &--bottom {
+      right: 0;
+      bottom: 0;
+      width: 70%;
+    }
+  }
+
+    &__nav {
+      display: none;
+      position: fixed;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: rgb(0 0 0 / 75%);
+      overflow: auto;
+      padding: 100px 30px 30px;
+    }
+
   &__list {
     &-nav {
       list-style: none;
@@ -34,6 +86,15 @@
       padding: 0;
       margin: 0;
       text-transform: uppercase;
+
+      @media (width <= 1199px) {
+        display: none;
+        max-width: 320px;
+        width: 100%;
+        top: 100px;
+        flex-direction: column;
+        margin: 0 auto;
+      }
     }
 
     &-actions {
@@ -55,9 +116,8 @@
       letter-spacing: 0.1em;
       text-align: left;
       text-transform: uppercase;
-      transition:
-        visibility 0.3s ease,
-        opacity 0.3s ease;
+      transition: visibility 0.3s ease,
+      opacity 0.3s ease;
 
       &-open {
         visibility: visible;
@@ -71,6 +131,10 @@
       margin: 0;
       display: flex;
       gap: 17px;
+
+      @media (width <= 1199px) {
+        display: none;
+      }
     }
   }
 

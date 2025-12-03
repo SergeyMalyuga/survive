@@ -46,28 +46,6 @@
     margin-bottom: clamp(10.875rem, 8.1023rem + 12.1543vw, 22.6875rem);
   }
 
-/*  &__button {
-    max-width: 260px;
-    width: 100%;
-    padding: 15px 20px;
-    border: none;
-    border-radius: 4px;
-    background-color: variables.$orange;
-    color: variables.$dark-charcoal;
-    font-family: variables.$font-family-primary;
-    font-size: clamp(0.875rem, 0.8457rem + 0.1286vw, 1rem);
-    font-weight: 700;
-    line-height: clamp(1.1875rem, 1.1435rem + 0.1929vw, 1.375rem);
-    letter-spacing: 0;
-    text-align: center;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-
-    &:hover {
-      background-color: variables.$text-main-color;
-    }
-  }*/
-
   &__link {
     display: flex;
     flex-direction: column;
@@ -94,6 +72,7 @@
       mask-position: center;
       mask-size: cover;
       transition: background-color 0.3s ease;
+      z-index: -1;
     }
 
     &:hover {
