@@ -1,10 +1,13 @@
-<app-header/>
-<main class="main" role="main">
-  <app-hero (scrolled)="onScrollRequested()"/>
-  <app-story [isScroll]="isStoryScroll()"/>
-  <app-details/>
-  <app-requirements/>
-  <app-quotes/>
-  <app-subscribe/>
-</main>
-<app-footer/>
+<div class="main__shell">
+  <app-header/>
+  <main class="main" role="main">
+    <app-hero (scrolled)="onScrollRequested()"/>
+    <app-story [isScroll]="isStoryScroll()"/>
+    <app-details/>
+    <app-requirements/>
+    <app-quotes/>
+    <app-subscribe/>
+  </main>
+  <app-footer/>
+</div>
+

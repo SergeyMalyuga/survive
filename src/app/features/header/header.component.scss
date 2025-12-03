@@ -39,6 +39,12 @@
     @media (width <= 1199px) {
       display: block;
     }
+
+    &:hover {
+      span {
+        background-color: variables.$orange;
+      }
+    }
   }
 
   &__line {
@@ -47,6 +53,7 @@
     width: 100%;
     background-color: variables.$text-main-color;
     border-radius: 3px;
+    transition: background-color 0.3s ease;
 
     &--top {
       top: 0;
@@ -63,20 +70,32 @@
       right: 0;
       bottom: 0;
       width: 70%;
+      transition: width 0.3s ease;
+
+      &-open {
+        width: 100%;
+      }
     }
   }
 
-    &__nav {
-      display: none;
+  &__nav {
+    @media (width <= 1199px) {
       position: fixed;
       left: 0;
-      top: 0;
+      top: -100%;
       width: 100%;
       height: 100%;
       background: rgb(0 0 0 / 75%);
       overflow: auto;
       padding: 100px 30px 30px;
+      transition: inset 0.5s ease;
     }
+
+
+    &--open {
+      top: 0;
+    }
+  }
 
   &__list {
     &-nav {
@@ -94,6 +113,10 @@
         top: 100px;
         flex-direction: column;
         margin: 0 auto;
+      }
+
+      &--open {
+        display: flex;
       }
     }
 
@@ -219,6 +242,11 @@
 
   &__wrapper {
     position: relative;
+
+    &-nav {
+      display: flex;
+      gap: 16px;
+    }
   }
 
   &__action {
