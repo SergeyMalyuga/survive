@@ -16,6 +16,11 @@
     padding-bottom: 20px;
     border-bottom: 1px solid variables.$text-main-color-light;
     margin-bottom: 20px;
+
+    @media(width <= 1014px) {
+      flex-direction: column;
+      gap: 20px;
+    }
   }
 
   ul {
@@ -27,6 +32,8 @@
   &__list {
     &-nav {
       display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
       gap: 32px;
     }
 
@@ -39,15 +46,19 @@
 
   &__link {
     &-logo {
+      width: clamp(3.125rem, 2.5382rem + 2.5723vw, 5.625rem);
+
       img {
         display: block;
+        width: 100%;
+        height: auto;
       }
     }
 
     &-nav {
       text-decoration: none;
       color: variables.$text-main-color;
-      font-size: 18px;
+      font-size: clamp(0.75rem, 0.662rem + 0.3859vw, 1.125rem);
       font-weight: 700;
       line-height: 16px;
       text-align: right;
