@@ -1,0 +1,15 @@
+{
+  "HERO": {
+    "TITLE": "SURVIVRE À TOUT PRIX",
+    "SUBTITLE": "Découvrez le nouveau jeu de bataille royale sociale",
+    "BUTTON": "Acheter maintenant sur Steam",
+    "LINK": "Histoire"
+  },
+  "HEADER": {
+    "MAIN": "principal",
+    "ABOUT": "à propos",
+    "FEATURES": "caractéristiques de jeu",
+    "REQUIREMENTS": "Configuration requise",
+    "QUOTES": "devis"
+  }
+}

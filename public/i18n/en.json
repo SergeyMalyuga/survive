@@ -4,5 +4,12 @@
     "SUBTITLE": "Experience new social battle royale game",
     "BUTTON": "Buy Now on Steam | $14.99",
     "LINK": "the story"
+  },
+  "HEADER": {
+    "MAIN": "main",
+    "ABOUT": "about",
+    "FEATURES": "game features",
+    "REQUIREMENTS": "System requirements",
+    "QUOTES": "quotes"
   }
 }

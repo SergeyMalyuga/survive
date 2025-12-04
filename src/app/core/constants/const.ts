@@ -13,4 +13,12 @@ export const DetailsTabIds = {
   AUDIENCE: 'details-tab-3',
 } as const;
 
+export const Language = {
+  RU: 'ru',
+  EN: 'en',
+  FR: 'fr',
+  DE: 'de',
+} as const;
+
 export type DetailsTabId = (typeof DetailsTabIds)[keyof typeof DetailsTabIds];
+export type Language = typeof Language[keyof typeof Language];

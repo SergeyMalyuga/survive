@@ -17,19 +17,19 @@
     >
       <ul id="nav-menu" class="header-main__list-nav" [class.header-main__list-nav--open]="isMainNavOpen()">
         <li class="header-main__item-nav">
-          <a href="#" class="header-main__link-nav">Main</a>
+          <a href="#" class="header-main__link-nav">{{ 'HEADER.MAIN' | translate }}</a>
         </li>
         <li class="header-main__item-nav">
-          <a href="#" class="header-main__link-nav">About</a>
+          <a href="#" class="header-main__link-nav">{{ 'HEADER.ABOUT' | translate }}</a>
         </li>
         <li class="header-main__item-nav">
-          <a href="#" class="header-main__link-nav">Game features</a>
+          <a href="#" class="header-main__link-nav">{{ 'HEADER.FEATURES' | translate }}</a>
         </li>
         <li class="header-main__item-nav">
-          <a href="#" class="header-main__link-nav">System requirements</a>
+          <a href="#" class="header-main__link-nav">{{ 'HEADER.REQUIREMENTS' | translate }}</a>
         </li>
         <li class="header-main__item-nav">
-          <a href="#" class="header-main__link-nav">Quotes</a>
+          <a href="#" class="header-main__link-nav">{{ 'HEADER.QUOTES' | translate }}</a>
         </li>
         <li class="header-main__item-nav" [style.display]="isMainNavOpen() ? 'list-item' : 'none'">
           <div class="header-main__wrapper-nav" role="group">
@@ -58,21 +58,42 @@
             class="header-main__button-language"
             aria-label="Select language"
           >
-            eng
+            {{currentLanguage()}}
           </button>
           <ul
             class="header-main__list-actions"
             [class.header-main__list-actions-open]="isLanguageMenuOpen()"
-            role="listbox"
             aria-label="Language options"
           >
-            <li class="header-main__item-actions" role="option">rus</li>
-            <li class="header-main__item-actions" role="option">fra</li>
-            <li class="header-main__item-actions" role="option">deu</li>
+            <li class="header-main__item-actions"
+                [style.display]="currentLanguage() === Language.RU ? 'none' : 'list-item'">
+              <button appSwitchLanguage [language]="Language.RU" (languageSwitched)="onLanguageSwitched($event)" class="header-main__button-switch" type="button"
+                      aria-label="Выбор языка - русский">{{ Language.RU }}
+              </button>
+            </li>
+            <li class="header-main__item-actions"
+                [style.display]="currentLanguage() === Language.FR ? 'none' : 'list-item'">
+              <button appSwitchLanguage [language]="Language.FR" (languageSwitched)="onLanguageSwitched($event)" class="header-main__button-switch" type="button"
+                      aria-label="Выбор языка - французский">{{ Language.FR }}
+              </button>
+            </li>
+            <li class="header-main__item-actions"
+                [style.display]="currentLanguage() === Language.DE ? 'none' : 'list-item'">
+              <button appSwitchLanguage [language]="Language.DE" (languageSwitched)="onLanguageSwitched($event)" class="header-main__button-switch" type="button"
+                      aria-label="Выбор языка - немецкий">{{ Language.DE }}
+              </button>
+            </li>
+            <li class="header-main__item-actions"
+                [style.display]="currentLanguage() === Language.EN ? 'none' : 'list-item'">
+              <button appSwitchLanguage [language]="Language.EN" (languageSwitched)="onLanguageSwitched($event)" class="header-main__button-switch" type="button"
+                      aria-label="Выбор языка - английский">{{ Language.EN }}
+              </button>
+            </li>
           </ul>
         </div>
       </div>
-      <button aria-haspopup="true" [attr.aria-expanded]="isMainNavOpen()" aria-controls="nav-menu" appToggleMainNav (mainNavToggled)="onMainNavToggled()" [isMainNavOpen]="isMainNavOpen()"
+      <button aria-haspopup="true" [attr.aria-expanded]="isMainNavOpen()" aria-controls="nav-menu" appToggleMainNav
+              (mainNavToggled)="onMainNavToggled()" [isMainNavOpen]="isMainNavOpen()"
               class="header-main__burger">
         <span class="header-main__line header-main__line--top"></span>
         <span class="header-main__line header-main__line--middle"></span>
