@@ -13,6 +13,12 @@
       "img content"
       "img form"
       "img .";
+
+    @media(width <= 768px) {
+      grid-template-areas:
+      "img content"
+       "form form";
+    }
   }
 
   &__title {
@@ -29,6 +35,7 @@
         position: absolute;
         left: -100px;
         top: 0;
+        bottom: 0;
       }
 
       img {
@@ -80,6 +87,14 @@
       opacity: 0.5;
       text-align: left;
     }
+
+    @media(width <= 768px) {
+      justify-content: center;
+    }
+
+    @media(width <= 496px) {
+      flex-direction: column;
+    }
   }
 
   &__label {
@@ -90,5 +105,15 @@
     padding: 15px;
     background-color: rgb(255 255 255 / 10%);
     border-radius: 5px;
+
+    @media(width <= 496px) {
+      max-width: 100%;
+    }
+  }
+
+  &__button-form {
+    @media(width <= 496px) {
+      max-width: 100%;
+    }
   }
 }
