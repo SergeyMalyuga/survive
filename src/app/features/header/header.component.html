@@ -31,7 +31,7 @@
         <li class="header-main__item-nav">
           <a href="#" class="header-main__link-nav">Quotes</a>
         </li>
-        <li class="header-main__item-nav">
+        <li class="header-main__item-nav" [style.display]="isMainNavOpen() ? 'list-item' : 'none'">
           <div class="header-main__wrapper-nav" role="group">
             <a href="#">
               <svg class="header-main__item-platform" width="30" height="30" aria-label="Xbox platform" role="img">
