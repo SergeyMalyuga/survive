@@ -91,7 +91,6 @@
       transition: inset 0.5s ease;
     }
 
-
     &--open {
       top: 0;
     }
@@ -132,8 +131,9 @@
       margin: 0;
       border-radius: 3px;
       background: variables.$black;
-      transition: visibility 0.3s ease,
-      opacity 0.3s ease;
+      transition:
+        visibility 0.3s ease,
+        opacity 0.3s ease;
 
       &-open {
         visibility: visible;

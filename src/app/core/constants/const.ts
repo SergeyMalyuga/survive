@@ -21,4 +21,4 @@ export const Language = {
 } as const;
 
 export type DetailsTabId = (typeof DetailsTabIds)[keyof typeof DetailsTabIds];
-export type Language = typeof Language[keyof typeof Language];
+export type Language = (typeof Language)[keyof typeof Language];

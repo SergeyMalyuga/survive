@@ -2,7 +2,7 @@
   "HERO": {
     "TITLE": "SURVIVRE À TOUT PRIX",
     "SUBTITLE": "Découvrez le nouveau jeu de bataille royale sociale",
-    "BUTTON": "Acheter maintenant sur Steam",
+    "BUTTON": "Buy Now on Steam | $14.99",
     "LINK": "Histoire"
   },
   "HEADER": {
@@ -11,5 +11,18 @@
     "FEATURES": "caractéristiques de jeu",
     "REQUIREMENTS": "Configuration requise",
     "QUOTES": "devis"
+  },
+  "STORY": {
+    "SUBTITLE": "jeu social bataille royale",
+    "TITLE": "Qu'est-ce que SOS?",
+    "TEXT": "À chaque tour, vous et 15 autres joueurs s'affrontent pour échapper à une île mortelle infestée de monstres. L'astuce est que seuls trois membres peuvent survivre. Allez-vous courir seul ou vous lier d'amitié avec d'autres participants pour vous évader ? faire attention. Votre vie dépendra de vos décisions."
+  },
+  "DETAILS": {
+    "SUBTITLE": "Qu'y a-t-il de si spécial?",
+    "TITLE": "détails",
+    "BUTTON-1": "SURVIVRE À TOUT PRIX",
+    "BUTTON-2": "CONSTRUISEZ DES ALLIÉS ET DES ENNEMIS",
+    "BUTTON-3": "Impressionner le public",
+    "BUTTON-TEXT": "Vous avez 30 minutes pour trouver la relique, signaler une évacuation et sécuriser l'un des trois emplacements dans l'hélicoptère de sauvetage."
   }
 }

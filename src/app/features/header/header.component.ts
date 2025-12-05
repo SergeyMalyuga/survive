@@ -1,13 +1,18 @@
-import {ChangeDetectionStrategy, Component, signal} from '@angular/core';
-import {ToggleLanguageDirective} from './directives/toggle-language.directive';
-import {ToggleMainNavDirective} from './directives/toggle-main-nav.directive';
-import {TranslatePipe} from '@ngx-translate/core';
-import {Language} from '../../core/constants/const';
-import {SwitchLanguageDirective} from './directives/switch-language.directive';
+import { ChangeDetectionStrategy, Component, signal } from '@angular/core';
+import { ToggleLanguageDirective } from './directives/toggle-language.directive';
+import { ToggleMainNavDirective } from './directives/toggle-main-nav.directive';
+import { TranslatePipe } from '@ngx-translate/core';
+import { Language } from '../../core/constants/const';
+import { SwitchLanguageDirective } from './directives/switch-language.directive';
 
 @Component({
   selector: 'app-header',
-  imports: [ToggleLanguageDirective, ToggleMainNavDirective, TranslatePipe, SwitchLanguageDirective],
+  imports: [
+    ToggleLanguageDirective,
+    ToggleMainNavDirective,
+    TranslatePipe,
+    SwitchLanguageDirective,
+  ],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,

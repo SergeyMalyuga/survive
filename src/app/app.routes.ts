@@ -1,5 +1,5 @@
-import {Routes} from '@angular/router';
-import {AppRoutes} from './core/constants/const';
+import { Routes } from '@angular/router';
+import { AppRoutes } from './core/constants/const';
 
 export const routes: Routes = [
   {

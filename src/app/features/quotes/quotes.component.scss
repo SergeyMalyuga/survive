@@ -1,8 +1,15 @@
-@use '../../../styles/variables';
+@use "../../../styles/variables";
 
 .quotes {
   scroll-snap-align: start;
-  background: radial-gradient(78.66% 177.87% at 19.56% 37.57%, rgb(255 255 255 / 0%) 0%, rgb(0 0 0 / 0%) 19.22%, #080A0B 99.74%), url("../../../assets/images/raster/quotes-bg.jpg");
+  background:
+    radial-gradient(
+      78.66% 177.87% at 19.56% 37.57%,
+      rgb(255 255 255 / 0%) 0%,
+      rgb(0 0 0 / 0%) 19.22%,
+      #080a0b 99.74%
+    ),
+    url("../../../assets/images/raster/quotes-bg.jpg");
   background-repeat: repeat;
   background-size: cover;
   background-position: center;
@@ -66,7 +73,7 @@
       }
 
       @media (width <= 768px) {
-       width: clamp(2.5rem, 0.9716rem + 6.6998vw, 4.1875rem);
+        width: clamp(2.5rem, 0.9716rem + 6.6998vw, 4.1875rem);
         height: clamp(2.5rem, 1.0282rem + 6.4516vw, 4.125rem);
       }
     }

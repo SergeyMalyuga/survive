@@ -43,9 +43,13 @@
   </div>
   <div class="hero__content">
     <div class="hero__wrapper">
-      <h3 class="hero__title-content title-content">{{'HERO.TITLE' | translate}}</h3>
-      <span class="hero__text">{{'HERO.SUBTITLE' | translate}}</span>
-      <button class="hero__button button">{{'HERO.BUTTON' | translate}}</button>
+      <h3 class="hero__title-content title-content">
+        {{ "HERO.TITLE" | translate }}
+      </h3>
+      <span class="hero__text">{{ "HERO.SUBTITLE" | translate }}</span>
+      <button class="hero__button button">
+        {{ "HERO.BUTTON" | translate }}
+      </button>
     </div>
     <a
       appScrollRequest
@@ -53,7 +57,7 @@
       href="#"
       class="hero__link"
       aria-label="Прочитать историю игры"
-      >{{'HERO.LINK' | translate}}</a
+      >{{ "HERO.LINK" | translate }}</a
     >
   </div>
 </section>

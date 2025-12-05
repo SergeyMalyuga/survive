@@ -1,8 +1,8 @@
-import {inject, Injectable} from '@angular/core';
-import {DOCUMENT} from '@angular/common';
+import { inject, Injectable } from '@angular/core';
+import { DOCUMENT } from '@angular/common';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class BodyService {
   private document = inject(DOCUMENT);

@@ -1,9 +1,16 @@
-import {AfterViewInit, Component, ElementRef, inject, Input, OnDestroy,} from '@angular/core';
+import {
+  AfterViewInit,
+  Component,
+  ElementRef,
+  inject,
+  Input,
+  OnDestroy,
+} from '@angular/core';
 import Swiper from 'swiper';
-import {Autoplay, EffectCards, Navigation, Pagination} from 'swiper/modules';
-import {SwiperConfig} from '../../core/models/swiper-config.model';
-import {SwiperConfigService} from '../../core/services/swiper-config.service';
-import {SwiperType} from '../../core/constants/const';
+import { Autoplay, EffectCards, Navigation, Pagination } from 'swiper/modules';
+import { SwiperConfig } from '../../core/models/swiper-config.model';
+import { SwiperConfigService } from '../../core/services/swiper-config.service';
+import { SwiperType } from '../../core/constants/const';
 
 @Component({
   selector: 'app-swiper',

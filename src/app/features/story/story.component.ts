@@ -1,11 +1,12 @@
-import {ChangeDetectionStrategy, Component, Input} from '@angular/core';
-import {ScrollToStoryDirective} from './directives/scroll-to-story.directive';
-import {SwiperComponent} from '../swiper/swiper.component';
-import {SwiperType} from '../../core/constants/const';
+import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
+import { ScrollToStoryDirective } from './directives/scroll-to-story.directive';
+import { SwiperComponent } from '../swiper/swiper.component';
+import { SwiperType } from '../../core/constants/const';
+import { TranslatePipe } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-story',
-  imports: [ScrollToStoryDirective, SwiperComponent],
+  imports: [ScrollToStoryDirective, SwiperComponent, TranslatePipe],
   templateUrl: './story.component.html',
   styleUrl: './story.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,

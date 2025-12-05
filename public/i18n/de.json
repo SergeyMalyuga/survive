@@ -2,7 +2,7 @@
   "HERO": {
     "TITLE": "ÜBERLEBEN UM JEDEN KOSTEN",
     "SUBTITLE": "Erlebe das neue soziale Battle-Royale-Spiel",
-    "BUTTON": "Jetzt bei Steam kaufen",
+    "BUTTON": "Buy Now on Steam | $14.99",
     "LINK": "Geschichte"
   },
   "HEADER": {
@@ -11,5 +11,18 @@
     "FEATURES": "Spielfunktionen",
     "REQUIREMENTS": "System Anforderungen",
     "QUOTES": "Zitate"
+  },
+  "STORY": {
+    "SUBTITLE": "Battle Royale Gesellschaftsspiel",
+    "TITLE": "Was ist SOS?",
+    "TEXT": "In jeder Runde treten Sie und 15 andere Spieler gegeneinander an, um einer tödlichen, von Monstern befallenen Insel zu entkommen. Der Trick ist, dass nur drei Mitglieder überleben können. Wirst du alleine laufen oder dich mit anderen Teilnehmern anfreunden, um zu entkommen? vorsichtig sein. Dein Leben wird von deinen Entscheidungen abhängen."
+  },
+  "DETAILS": {
+    "SUBTITLE": "Was ist so besonders?",
+    "TITLE": "Einzelheiten",
+    "BUTTON-1": "ÜBERLEBEN UM JEDEN KOSTEN",
+    "BUTTON-2": "BAUE VERBÜNDETE UND FEINDE AUF",
+    "BUTTON-3": "Publikum beeindrucken",
+    "BUTTON-TEXT": "Sie haben 30 Minuten Zeit, um das Relikt zu finden, eine Evakuierung zu signalisieren und einen von drei Orten im Rettungshubschrauber zu sichern."
   }
 }

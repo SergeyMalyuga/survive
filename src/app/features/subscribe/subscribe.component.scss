@@ -1,4 +1,4 @@
-@use '../../../styles/variables' as variables;
+@use "../../../styles/variables" as variables;
 
 .subscribe {
   background-color: variables.$black-night;
@@ -14,10 +14,10 @@
       "img form"
       "img .";
 
-    @media(width <= 768px) {
+    @media (width <= 768px) {
       grid-template-areas:
-      "img content"
-       "form form";
+        "img content"
+        "form form";
     }
   }
 
@@ -67,7 +67,8 @@
     display: flex;
     gap: 17px;
 
-    input, input::placeholder {
+    input,
+    input::placeholder {
       background-color: transparent;
       border: none;
       color: variables.$orange;
@@ -88,11 +89,11 @@
       text-align: left;
     }
 
-    @media(width <= 768px) {
+    @media (width <= 768px) {
       justify-content: center;
     }
 
-    @media(width <= 496px) {
+    @media (width <= 496px) {
       flex-direction: column;
     }
   }
@@ -106,13 +107,13 @@
     background-color: rgb(255 255 255 / 10%);
     border-radius: 5px;
 
-    @media(width <= 496px) {
+    @media (width <= 496px) {
       max-width: 100%;
     }
   }
 
   &__button-form {
-    @media(width <= 496px) {
+    @media (width <= 496px) {
       max-width: 100%;
     }
   }

@@ -1,4 +1,4 @@
-import {SwiperOptions} from 'swiper/types';
+import { SwiperOptions } from 'swiper/types';
 
 export interface SwiperConfig {
   autoplay?: boolean;
