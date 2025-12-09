@@ -70,5 +70,14 @@
         "DATE": "24. Dezember 2018"
       }
     }
+  },
+  "SUBSCRIBE": {
+    "SUBTITLE": "Möchten Sie in Verbindung bleiben?",
+    "TITLE": "ABONNIEREN SIE DEN NEWSLETTER",
+    "TEXT": "Um unsere Neuigkeiten zu erhalten, müssen Sie lediglich Ihre E-Mail-Adresse eingeben. Wir kümmern uns um alles andere. Wir senden Ihnen E-Mails mit Informationen zum Spiel. Wir spammen nicht.",
+    "BUTTON": {
+      "SUBSCRIBE": "Abonniere jetzt"
+    },
+    "LABEL": "Ihre E-Mail-Adresse"
   }
 }

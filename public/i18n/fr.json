@@ -26,23 +26,23 @@
     "BUTTON-TEXT": "Vous avez 30 minutes pour trouver la relique, signaler une évacuation et sécuriser l'un des trois emplacements dans l'hélicoptère de sauvetage."
   },
   "REQUIREMENTS": {
-  "SUBTITLE": "Mon ordinateur peut-il exécuter ce jeu?",
-  "TITLE": {
-    "MAIN": "Configuration requise",
-    "OS": "so:",
-    "PROCESSOR": "CPU:",
-    "MEMORY": "Mémoire:",
-    "STORAGE": "stockage:",
-    "GRAPHICS": "ARTS GRAPHIQUES:"
+    "SUBTITLE": "Mon ordinateur peut-il exécuter ce jeu?",
+    "TITLE": {
+      "MAIN": "Configuration requise",
+      "OS": "so:",
+      "PROCESSOR": "CPU:",
+      "MEMORY": "Mémoire:",
+      "STORAGE": "stockage:",
+      "GRAPHICS": "ARTS GRAPHIQUES:"
+    },
+    "TEXT": {
+      "OS": "Windows 7 64 bits uniquement (actuellement pas de support OSX)",
+      "PROCESSOR": "Intel Core 2 Duo à 2,4 GHz ou AMD Athlon X2 à 2,8 GHz",
+      "MEMORY": "8 Go de RAM",
+      "STORAGE": "8 Go d'espace libre",
+      "GRAPHICS": "NVIDIA GeForce GTX 660 2 Go ou AMD Radeon HD 7850 2 Go DirectX11 (Shader Model 5)"
+    }
   },
-  "TEXT": {
-    "OS": "Windows 7 64 bits uniquement (actuellement pas de support OSX)",
-    "PROCESSOR": "Intel Core 2 Duo à 2,4 GHz ou AMD Athlon X2 à 2,8 GHz",
-    "MEMORY": "8 Go de RAM",
-    "STORAGE": "8 Go d'espace libre",
-    "GRAPHICS": "NVIDIA GeForce GTX 660 2 Go ou AMD Radeon HD 7850 2 Go DirectX11 (Shader Model 5)"
-  }
-},
   "QUOTES": {
     "SUBTITLE": "Qu'est-ce que les gens pensent?",
     "TITLE": "Citations de presse",
@@ -70,5 +70,14 @@
         "DATE": "24 décembre 2018"
       }
     }
+  },
+  "SUBSCRIBE": {
+    "SUBTITLE": "Vous voulez rester connecté?",
+    "TITLE": "ABONNEZ-VOUS À LA NEWSLETTER",
+    "TEXT": "Pour commencer à recevoir nos actualités, il vous suffit de saisir votre adresse e-mail. Nous nous occuperons de tout le reste. Nous vous enverrons des e-mails contenant des informations sur le jeu. Nous ne spammons pas.",
+    "BUTTON": {
+      "SUBSCRIBE": "Abonnez-vous maintenant"
+    },
+    "LABEL": "Votre adresse e-mail"
   }
 }

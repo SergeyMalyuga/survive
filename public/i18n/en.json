@@ -70,5 +70,14 @@
         "DATE": "December 24, 2018"
       }
     }
+  },
+  "SUBSCRIBE": {
+    "SUBTITLE": "Want to stay in touch?",
+    "TITLE": "newsletter SUBSCRIBE ",
+    "TEXT": "In order to start receiving our news, all you have to do is enter your email address. Everything else will be taken care of by us. We will send you emails containing information about game. We don’t spam.",
+    "BUTTON": {
+      "SUBSCRIBE": "Subscribe now"
+    },
+    "LABEL": "Your email address"
   }
 }
