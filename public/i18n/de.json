@@ -24,5 +24,23 @@
     "BUTTON-2": "BAUE VERBÜNDETE UND FEINDE AUF",
     "BUTTON-3": "Publikum beeindrucken",
     "BUTTON-TEXT": "Sie haben 30 Minuten Zeit, um das Relikt zu finden, eine Evakuierung zu signalisieren und einen von drei Orten im Rettungshubschrauber zu sichern."
+  },
+  "REQUIREMENTS": {
+    "SUBTITLE": "Kann mein Computer dieses Spiel ausführen?",
+    "TITLE": {
+      "MAIN": "System Anforderungen",
+      "OS": "so:",
+      "PROCESSOR": "ZENTRALPROZESSOR:",
+      "MEMORY": "Speicher:",
+      "STORAGE": "Lagerung:",
+      "GRAPHICS": "GRAFIK:"
+    },
+    "TEXT": {
+      "OS": "Nur Windows 7 64-Bit (derzeit keine OSX-Unterstützung)",
+      "PROCESSOR": "Intel Core 2 Duo @ 2,4 GHz oder AMD Athlon X2 @ 2,8 GHz",
+      "MEMORY": "8 GB Arbeitsspeicher",
+      "STORAGE": "8 GB freier Speicherplatz",
+      "GRAPHICS": "NVIDIA GeForce GTX 660 2 GB oder AMD Radeon HD 7850 2 GB DirectX11 (Shader Model 5)"
+    }
   }
 }
