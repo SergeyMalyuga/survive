@@ -42,5 +42,33 @@
     "STORAGE": "8 Go d'espace libre",
     "GRAPHICS": "NVIDIA GeForce GTX 660 2 Go ou AMD Radeon HD 7850 2 Go DirectX11 (Shader Model 5)"
   }
-}
+},
+  "QUOTES": {
+    "SUBTITLE": "Qu'est-ce que les gens pensent?",
+    "TITLE": "Citations de presse",
+    "TEXT": "",
+    "BUTTON": {
+      "READ-MORE": "lire plus d'avis"
+    },
+    "CARD": {
+      "EVAN": {
+        "NAME": "Evan Lahti",
+        "PROFESSION": "joueur sur PC",
+        "TEXT": "“Une de mes réalisations de jeu de l année.”",
+        "DATE": "18 octobre 2018"
+      },
+      "JADA": {
+        "NAME": "Jada Griffin",
+        "PROFESSION": "Réacteur nerd",
+        "TEXT": "“La prochaine grande chose dans le monde des jeux de streaming et de survie.”",
+        "DATE": "21 décembre 2018"
+      },
+      "AARON": {
+        "NAME": "Aaron Williams",
+        "PROFESSION": "Uproxx",
+        "TEXT": "“Snoop Dogg jouant le très intéressant 'SOS' est tout simplement ridicule.”",
+        "DATE": "24 décembre 2018"
+      }
+    }
+  }
 }
